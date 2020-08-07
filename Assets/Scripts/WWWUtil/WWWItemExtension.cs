@@ -26,10 +26,10 @@ public static class WWWItemExtension
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
         {
-            item = new GetWWWItem(url);
+            item = new GetWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
-
+    
         item.SetValue(url);
         item.downloadText = text;
         item.downloadError = error;
@@ -42,7 +42,7 @@ public static class WWWItemExtension
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
         {
-            item = new GetWWWItem(url);
+            item = new GetWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -59,7 +59,7 @@ public static class WWWItemExtension
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
         {
-            item = new GetWWWItem(url);
+            item = new GetWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -76,7 +76,7 @@ public static class WWWItemExtension
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
         {
-            item = new GetWWWItem(url);
+            item = new GetWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -98,7 +98,7 @@ public static class WWWItemExtension
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
         {
-            item = new GetWWWItem(url);
+            item = new GetWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -114,7 +114,7 @@ public static class WWWItemExtension
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
         {
-            item = new GetWWWItem(url);
+            item = new GetWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -131,7 +131,7 @@ public static class WWWItemExtension
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
         {
-            item = new GetWWWItem(url);
+            item = new GetWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -148,7 +148,7 @@ public static class WWWItemExtension
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
         {
-            item = new GetWWWItem(url);
+            item = new GetWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -170,7 +170,7 @@ public static class WWWItemExtension
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
         {
-            item = new GetWWWItem(url);
+            item = new GetWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -186,7 +186,7 @@ public static class WWWItemExtension
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
         {
-            item = new GetWWWItem(url);
+            item = new GetWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -204,7 +204,7 @@ public static class WWWItemExtension
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
         {
-            item = new GetWWWItem(url);
+            item = new GetWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -222,7 +222,7 @@ public static class WWWItemExtension
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
         {
-            item = new GetWWWItem(url);
+            item = new GetWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -251,7 +251,7 @@ public static class WWWItemExtension
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
         {
-            item = new PostWWWItem(url, postData);
+            item = new PostWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -267,7 +267,7 @@ public static class WWWItemExtension
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
         {
-            item = new PostWWWItem(url, postData);
+            item = new PostWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -285,7 +285,7 @@ public static class WWWItemExtension
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
         {
-            item = new PostWWWItem(url, postData);
+            item = new PostWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -303,7 +303,7 @@ public static class WWWItemExtension
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
         {
-            item = new PostWWWItem(url, postData);
+            item = new PostWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -325,7 +325,7 @@ public static class WWWItemExtension
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
         {
-            item = new PostWWWItem(url, postData);
+            item = new PostWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -342,7 +342,7 @@ public static class WWWItemExtension
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
         {
-            item = new PostWWWItem(url, postData);
+            item = new PostWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -359,7 +359,7 @@ public static class WWWItemExtension
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
         {
-            item = new PostWWWItem(url, postData);
+            item = new PostWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -377,7 +377,7 @@ public static class WWWItemExtension
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
         {
-            item = new PostWWWItem(url, postData);
+            item = new PostWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -399,7 +399,7 @@ public static class WWWItemExtension
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
         {
-            item = new PostWWWItem(url, postData);
+            item = new PostWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -416,7 +416,7 @@ public static class WWWItemExtension
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
         {
-            item = new PostWWWItem(url, postData);
+            item = new PostWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -434,7 +434,7 @@ public static class WWWItemExtension
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
         {
-            item = new PostWWWItem(url, postData);
+            item = new PostWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -452,7 +452,7 @@ public static class WWWItemExtension
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
         {
-            item = new PostWWWItem(url, postData);
+            item = new PostWWWItem();
             WWWItemPool.AddWWWItem(item);
         }
 
@@ -480,7 +480,8 @@ public static class WWWItemExtension
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
         {
-            item = new FormWWWItem(url, form);
+            item = new FormWWWItem();
+            WWWItemPool.AddWWWItem(item);
         }
 
         item.SetValue(url, form);
@@ -496,7 +497,8 @@ public static class WWWItemExtension
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
         {
-            item = new FormWWWItem(url, form);
+            item = new FormWWWItem();
+            WWWItemPool.AddWWWItem(item);
         }
 
         item.SetValue(url, form);
@@ -513,7 +515,8 @@ public static class WWWItemExtension
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
         {
-            item = new FormWWWItem(url, form);
+            item = new FormWWWItem();
+            WWWItemPool.AddWWWItem(item);
         }
 
         item.SetValue(url, form);
@@ -530,7 +533,8 @@ public static class WWWItemExtension
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
         {
-            item = new FormWWWItem(url, form);
+            item = new FormWWWItem();
+            WWWItemPool.AddWWWItem(item);
         }
 
         item.SetValue(url, form);
@@ -551,7 +555,8 @@ public static class WWWItemExtension
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
         {
-            item = new FormWWWItem(url, form);
+            item = new FormWWWItem();
+            WWWItemPool.AddWWWItem(item);
         }
 
         item.SetValue(url, form);
@@ -567,7 +572,8 @@ public static class WWWItemExtension
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
         {
-            item = new FormWWWItem(url, form);
+            item = new FormWWWItem();
+            WWWItemPool.AddWWWItem(item);
         }
 
         item.SetValue(url, form);
@@ -584,7 +590,8 @@ public static class WWWItemExtension
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
         {
-            item = new FormWWWItem(url, form);
+            item = new FormWWWItem();
+            WWWItemPool.AddWWWItem(item);
         }
 
         item.SetValue(url, form);
@@ -601,7 +608,8 @@ public static class WWWItemExtension
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
         {
-            item = new FormWWWItem(url, form);
+            item = new FormWWWItem();
+            WWWItemPool.AddWWWItem(item);
         }
 
         item.SetValue(url, form);
@@ -622,7 +630,8 @@ public static class WWWItemExtension
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
         {
-            item = new FormWWWItem(url, form);
+            item = new FormWWWItem();
+            WWWItemPool.AddWWWItem(item);
         }
 
         item.SetValue(url, form);
@@ -638,7 +647,8 @@ public static class WWWItemExtension
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
         {
-            item = new FormWWWItem(url, form);
+            item = new FormWWWItem();
+            WWWItemPool.AddWWWItem(item);
         }
 
         item.SetValue(url, form);
@@ -655,7 +665,8 @@ public static class WWWItemExtension
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
         {
-            item = new FormWWWItem(url, form);
+            item = new FormWWWItem();
+            WWWItemPool.AddWWWItem(item);
         }
 
         item.SetValue(url, form);
@@ -672,7 +683,8 @@ public static class WWWItemExtension
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
         {
-            item = new FormWWWItem(url, form);
+            item = new FormWWWItem();
+            WWWItemPool.AddWWWItem(item);
         }
 
         item.SetValue(url, form);

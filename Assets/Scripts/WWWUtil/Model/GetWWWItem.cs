@@ -16,10 +16,10 @@ using UnityEngine;
 public class GetWWWItem : WWWItemBase
 {
 
-    public GetWWWItem(string url):base(url)
-    {
-        this.url = url;
-    }
+    //public GetWWWItem(string url):base(url)
+    //{
+    //    this.url = url;
+    //}
 
     /// <summary>
     /// 设置参数
@@ -31,11 +31,11 @@ public class GetWWWItem : WWWItemBase
     }
 
      
-    public override void Init()
-    {
-        base.Init();
-        // this.url = string.Empty;
-    }
+    //public override void Init()
+    //{
+    //    base.Init();
+    //    // this.url = string.Empty;
+    //}
 
    
     public override IEnumerator DownLoad()

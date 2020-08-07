@@ -18,11 +18,11 @@ public class PostWWWItem : WWWItemBase
 
     private byte[] postData;
 
-    public PostWWWItem(string url,byte[] postData) :base(url)
-    {
-        this.url = url;
-        this.postData = postData;
-    }
+    //public PostWWWItem(string url,byte[] postData)
+    //{
+    //    this.url = url;
+    //    this.postData = postData;
+    //}
 
     
     public void SetValue(string url,byte[] postData)

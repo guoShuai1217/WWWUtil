@@ -17,11 +17,11 @@ public class FormWWWItem : WWWItemBase
 {
     private WWWForm form;
 
-    public FormWWWItem(string url, WWWForm form) : base(url)
-    {
-        this.url = url;
-        this.form = form;
-    }
+    //public FormWWWItem(string url, WWWForm form) : base(url)
+    //{
+    //    this.url = url;
+    //    this.form = form;
+    //}
 
     public void SetValue(string url,WWWForm form)
     {

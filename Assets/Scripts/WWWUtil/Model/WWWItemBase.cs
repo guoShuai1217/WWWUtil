@@ -29,10 +29,10 @@ public abstract class WWWItemBase
 {
     protected string url;
 
-    public WWWItemBase(string url)
-    {
-        this.url = url;
-    }
+    //public WWWItemBase(string url)
+    //{
+    //    this.url = url;
+    //}
 
     protected bool isFinish = false;
     /// <summary>

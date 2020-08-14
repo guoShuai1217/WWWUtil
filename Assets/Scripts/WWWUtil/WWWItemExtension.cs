@@ -21,7 +21,7 @@ public static class WWWItemExtension
 
     #region 返回结果为 string
 
-    public static void GetRequest(this WWWUtil wwwUtil, string url, DownLoadText text, DownLoadError error = null)
+    public static void GetStringRequest(this WebManager webMgr, string url, DownLoadText text, DownLoadError error = null)
     {
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
@@ -34,10 +34,10 @@ public static class WWWItemExtension
         item.downloadText = text;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
-    public static void GetRequest(this WWWUtil wwwUtil, string url, BeginDownLoad begin, DownLoadText text, DownLoadError error = null)
+    public static void GetStringRequest(this WebManager webMgr, string url, BeginDownLoad begin, DownLoadText text, DownLoadError error = null)
     {
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
@@ -51,10 +51,10 @@ public static class WWWItemExtension
         item.downloadText = text;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
-    public static void GetRequest(this WWWUtil wwwUtil, string url, DownLoadProgress progress, DownLoadText text, DownLoadError error = null)
+    public static void GetStringRequest(this WebManager webMgr, string url, DownLoadProgress progress, DownLoadText text, DownLoadError error = null)
     {
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
@@ -68,10 +68,10 @@ public static class WWWItemExtension
         item.downloadText = text;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
-    public static void GetRequest(this WWWUtil wwwUtil, string url,BeginDownLoad begin, DownLoadProgress progress, DownLoadText text, DownLoadError error = null)
+    public static void GetStringRequest(this WebManager webMgr, string url,BeginDownLoad begin, DownLoadProgress progress, DownLoadText text, DownLoadError error = null)
     {
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
@@ -86,14 +86,14 @@ public static class WWWItemExtension
         item.downloadText = text;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
     #endregion
 
     #region 返回结果为 byte[]
 
-    public static void GetRequest(this WWWUtil wwwUtil, string url, DownLoadData data, DownLoadError error = null)
+    public static void GetByteRequest(this WebManager webMgr, string url, DownLoadData data, DownLoadError error = null)
     {
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
@@ -106,10 +106,10 @@ public static class WWWItemExtension
         item.downloadData = data;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
-    public static void GetRequest(this WWWUtil wwwUtil, string url, BeginDownLoad begin, DownLoadData data, DownLoadError error = null)
+    public static void GetByteRequest(this WebManager webMgr, string url, BeginDownLoad begin, DownLoadData data, DownLoadError error = null)
     {
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
@@ -123,10 +123,10 @@ public static class WWWItemExtension
         item.downloadData = data;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
-    public static void GetRequest(this WWWUtil wwwUtil, string url, DownLoadProgress progress, DownLoadData data, DownLoadError error = null)
+    public static void GetByteRequest(this WebManager webMgr, string url, DownLoadProgress progress, DownLoadData data, DownLoadError error = null)
     {
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
@@ -140,10 +140,10 @@ public static class WWWItemExtension
         item.downloadData = data;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
-    public static void GetRequest(this WWWUtil wwwUtil, string url, BeginDownLoad begin, DownLoadProgress progress, DownLoadData data, DownLoadError error = null)
+    public static void GetByteRequest(this WebManager webMgr, string url, BeginDownLoad begin, DownLoadProgress progress, DownLoadData data, DownLoadError error = null)
     {
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
@@ -158,14 +158,14 @@ public static class WWWItemExtension
         item.downloadData = data;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
     #endregion
 
     #region 返回结果为WWW
 
-    public static void GetRequest(this WWWUtil wwwUtil, string url, DownLoadFinish finish, DownLoadError error = null)
+    public static void GetWWWRequest(this WebManager webMgr, string url, DownLoadFinish finish, DownLoadError error = null)
     {
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
@@ -178,10 +178,10 @@ public static class WWWItemExtension
         item.downloadFinish = finish;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
-    public static void GetRequest(this WWWUtil wwwUtil, string url, BeginDownLoad begin, DownLoadFinish finish, DownLoadError error = null)
+    public static void GetWWWRequest(this WebManager webMgr, string url, BeginDownLoad begin, DownLoadFinish finish, DownLoadError error = null)
     {
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
@@ -195,11 +195,11 @@ public static class WWWItemExtension
         item.downloadFinish = finish;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void GetRequest(this WWWUtil wwwUtil, string url, DownLoadProgress progress, DownLoadFinish finish, DownLoadError error = null)
+    public static void GetWWWRequest(this WebManager webMgr, string url, DownLoadProgress progress, DownLoadFinish finish, DownLoadError error = null)
     {
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
@@ -213,11 +213,11 @@ public static class WWWItemExtension
         item.downloadFinish = finish;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void GetRequest(this WWWUtil wwwUtil, string url, BeginDownLoad begin, DownLoadProgress progress, DownLoadFinish finish, DownLoadError error = null)
+    public static void GetWWWRequest(this WebManager webMgr, string url, BeginDownLoad begin, DownLoadProgress progress, DownLoadFinish finish, DownLoadError error = null)
     {
         GetWWWItem item = WWWItemPool.GetWWWItem<GetWWWItem>();
         if (item == null)
@@ -232,7 +232,7 @@ public static class WWWItemExtension
         item.downloadFinish = finish;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
@@ -246,7 +246,7 @@ public static class WWWItemExtension
 
     #region 返回结果为 string
 
-    public static void PostRequest(this WWWUtil wwwUtil, string url, byte[] postData, DownLoadText text, DownLoadError error = null)
+    public static void PostStringRequest(this WebManager webMgr, string url, byte[] postData, DownLoadText text, DownLoadError error = null)
     {
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
@@ -259,10 +259,10 @@ public static class WWWItemExtension
         item.downloadText = text;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
-    public static void PostRequest(this WWWUtil wwwUtil, string url, byte[] postData,BeginDownLoad begin, DownLoadText text, DownLoadError error = null)
+    public static void PostStringRequest(this WebManager webMgr, string url, byte[] postData,BeginDownLoad begin, DownLoadText text, DownLoadError error = null)
     {
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
@@ -276,11 +276,11 @@ public static class WWWItemExtension
         item.downloadText = text;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void PostRequest(this WWWUtil wwwUtil, string url, byte[] postData, DownLoadProgress progress, DownLoadText text, DownLoadError error = null)
+    public static void PostStringRequest(this WebManager webMgr, string url, byte[] postData, DownLoadProgress progress, DownLoadText text, DownLoadError error = null)
     {
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
@@ -294,11 +294,11 @@ public static class WWWItemExtension
         item.downloadText = text;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void PostRequest(this WWWUtil wwwUtil, string url, byte[] postData, BeginDownLoad begin, DownLoadProgress progress, DownLoadText text, DownLoadError error = null)
+    public static void PostStringRequest(this WebManager webMgr, string url, byte[] postData, BeginDownLoad begin, DownLoadProgress progress, DownLoadText text, DownLoadError error = null)
     {
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
@@ -313,14 +313,14 @@ public static class WWWItemExtension
         item.downloadText = text;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
     #endregion
 
     #region 返回结果为 byte[]
 
-    public static void PostRequest(this WWWUtil wwwUtil, string url, byte[] postData, DownLoadData data, DownLoadError error = null)
+    public static void PostByteRequest(this WebManager webMgr, string url, byte[] postData, DownLoadData data, DownLoadError error = null)
     {
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
@@ -333,11 +333,11 @@ public static class WWWItemExtension
         item.downloadData = data;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void PostRequest(this WWWUtil wwwUtil, string url, byte[] postData, BeginDownLoad begin, DownLoadData data, DownLoadError error = null)
+    public static void PostByteRequest(this WebManager webMgr, string url, byte[] postData, BeginDownLoad begin, DownLoadData data, DownLoadError error = null)
     {
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
@@ -351,10 +351,10 @@ public static class WWWItemExtension
         item.downloadData = data;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
-    public static void PostRequest(this WWWUtil wwwUtil, string url, byte[] postData,DownLoadProgress progress,  DownLoadData data, DownLoadError error = null)
+    public static void PostByteRequest(this WebManager webMgr, string url, byte[] postData,DownLoadProgress progress,  DownLoadData data, DownLoadError error = null)
     {
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
@@ -368,11 +368,11 @@ public static class WWWItemExtension
         item.downloadData = data;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void PostRequest(this WWWUtil wwwUtil, string url, byte[] postData,BeginDownLoad begin, DownLoadProgress progress, DownLoadData data, DownLoadError error = null)
+    public static void PostByteRequest(this WebManager webMgr, string url, byte[] postData,BeginDownLoad begin, DownLoadProgress progress, DownLoadData data, DownLoadError error = null)
     {
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
@@ -387,14 +387,14 @@ public static class WWWItemExtension
         item.downloadData = data;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
     #endregion
 
     #region 返回结果为 WWW
 
-    public static void PostRequest(this WWWUtil wwwUtil, string url, byte[] postData, DownLoadFinish finish, DownLoadError error = null)
+    public static void PostWWWRequest(this WebManager webMgr, string url, byte[] postData, DownLoadFinish finish, DownLoadError error = null)
     {
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
@@ -407,11 +407,11 @@ public static class WWWItemExtension
         item.downloadFinish = finish;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void PostRequest(this WWWUtil wwwUtil, string url, byte[] postData, BeginDownLoad begin, DownLoadFinish finish, DownLoadError error = null)
+    public static void PostWWWRequest(this WebManager webMgr, string url, byte[] postData, BeginDownLoad begin, DownLoadFinish finish, DownLoadError error = null)
     {
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
@@ -425,11 +425,11 @@ public static class WWWItemExtension
         item.downloadFinish = finish;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void PostRequest(this WWWUtil wwwUtil, string url, byte[] postData, DownLoadProgress progress, DownLoadFinish finish, DownLoadError error = null)
+    public static void PostWWWRequest(this WebManager webMgr, string url, byte[] postData, DownLoadProgress progress, DownLoadFinish finish, DownLoadError error = null)
     {
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
@@ -443,11 +443,11 @@ public static class WWWItemExtension
         item.downloadFinish = finish;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void PostRequest(this WWWUtil wwwUtil, string url, byte[] postData, BeginDownLoad begin, DownLoadProgress progress, DownLoadFinish finish, DownLoadError error = null)
+    public static void PostWWWRequest(this WebManager webMgr, string url, byte[] postData, BeginDownLoad begin, DownLoadProgress progress, DownLoadFinish finish, DownLoadError error = null)
     {
         PostWWWItem item = WWWItemPool.GetWWWItem<PostWWWItem>();
         if (item == null)
@@ -462,7 +462,7 @@ public static class WWWItemExtension
         item.downloadFinish = finish;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
     #endregion
@@ -475,7 +475,7 @@ public static class WWWItemExtension
 
     #region 返回结果为 string
 
-    public static void WWWFormRequest(this WWWUtil wwwUtil, string url, WWWForm form, DownLoadText text, DownLoadError error = null)
+    public static void WWWFormStringRequest(this WebManager webMgr, string url, WWWForm form, DownLoadText text, DownLoadError error = null)
     {
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
@@ -488,11 +488,11 @@ public static class WWWItemExtension
         item.downloadText = text;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void WWWFormRequest(this WWWUtil wwwUtil, string url, WWWForm form,BeginDownLoad begin, DownLoadText text, DownLoadError error = null)
+    public static void WWWFormStringRequest(this WebManager webMgr, string url, WWWForm form,BeginDownLoad begin, DownLoadText text, DownLoadError error = null)
     {
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
@@ -506,11 +506,11 @@ public static class WWWItemExtension
         item.downloadText = text;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void WWWFormRequest(this WWWUtil wwwUtil, string url, WWWForm form, DownLoadProgress progress, DownLoadText text, DownLoadError error = null)
+    public static void WWWFormStringRequest(this WebManager webMgr, string url, WWWForm form, DownLoadProgress progress, DownLoadText text, DownLoadError error = null)
     {
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
@@ -524,11 +524,11 @@ public static class WWWItemExtension
         item.downloadText = text;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void WWWFormRequest(this WWWUtil wwwUtil, string url, WWWForm form,BeginDownLoad begin, DownLoadProgress progress,  DownLoadText text, DownLoadError error = null)
+    public static void WWWFormStringRequest(this WebManager webMgr, string url, WWWForm form,BeginDownLoad begin, DownLoadProgress progress,  DownLoadText text, DownLoadError error = null)
     {
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
@@ -543,14 +543,14 @@ public static class WWWItemExtension
         item.downloadText = text;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
     #endregion
 
     #region 返回结果为 byte[]
 
-    public static void WWWFormRequest(this WWWUtil wwwUtil, string url, WWWForm form, DownLoadData data, DownLoadError error = null)
+    public static void WWWFormByteRequest(this WebManager webMgr, string url, WWWForm form, DownLoadData data, DownLoadError error = null)
     {
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
@@ -563,11 +563,11 @@ public static class WWWItemExtension
         item.downloadData = data;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void WWWFormRequest(this WWWUtil wwwUtil, string url, WWWForm form, BeginDownLoad begin, DownLoadData data, DownLoadError error = null)
+    public static void WWWFormByteRequest(this WebManager webMgr, string url, WWWForm form, BeginDownLoad begin, DownLoadData data, DownLoadError error = null)
     {
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
@@ -581,11 +581,11 @@ public static class WWWItemExtension
         item.downloadData = data;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void WWWFormRequest(this WWWUtil wwwUtil, string url, WWWForm form, DownLoadProgress progress, DownLoadData data, DownLoadError error = null)
+    public static void WWWFormByteRequest(this WebManager webMgr, string url, WWWForm form, DownLoadProgress progress, DownLoadData data, DownLoadError error = null)
     {
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
@@ -599,11 +599,11 @@ public static class WWWItemExtension
         item.downloadData = data;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void WWWFormRequest(this WWWUtil wwwUtil, string url, WWWForm form, BeginDownLoad begin, DownLoadProgress progress, DownLoadData data, DownLoadError error = null)
+    public static void WWWFormByteRequest(this WebManager webMgr, string url, WWWForm form, BeginDownLoad begin, DownLoadProgress progress, DownLoadData data, DownLoadError error = null)
     {
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
@@ -618,14 +618,14 @@ public static class WWWItemExtension
         item.downloadData = data;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
     #endregion
 
     #region 返回结果为 WWW
 
-    public static void WWWFormRequest(this WWWUtil wwwUtil, string url, WWWForm form, DownLoadFinish finish, DownLoadError error = null)
+    public static void WWWFormWWWRequest(this WebManager webMgr, string url, WWWForm form, DownLoadFinish finish, DownLoadError error = null)
     {
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
@@ -638,11 +638,11 @@ public static class WWWItemExtension
         item.downloadFinish = finish;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void WWWFormRequest(this WWWUtil wwwUtil, string url, WWWForm form, BeginDownLoad begin, DownLoadFinish finish, DownLoadError error = null)
+    public static void WWWFormWWWRequest(this WebManager webMgr, string url, WWWForm form, BeginDownLoad begin, DownLoadFinish finish, DownLoadError error = null)
     {
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
@@ -656,11 +656,11 @@ public static class WWWItemExtension
         item.downloadFinish = finish;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void WWWFormRequest(this WWWUtil wwwUtil, string url, WWWForm form, DownLoadProgress progress, DownLoadFinish finish, DownLoadError error = null)
+    public static void WWWFormWWWRequest(this WebManager webMgr, string url, WWWForm form, DownLoadProgress progress, DownLoadFinish finish, DownLoadError error = null)
     {
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
@@ -674,11 +674,11 @@ public static class WWWItemExtension
         item.downloadFinish = finish;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 
-    public static void WWWFormRequest(this WWWUtil wwwUtil, string url, WWWForm form, BeginDownLoad begin, DownLoadProgress progress, DownLoadFinish finish, DownLoadError error = null)
+    public static void WWWFormWWWRequest(this WebManager webMgr, string url, WWWForm form, BeginDownLoad begin, DownLoadProgress progress, DownLoadFinish finish, DownLoadError error = null)
     {
         FormWWWItem item = WWWItemPool.GetWWWItem<FormWWWItem>();
         if (item == null)
@@ -693,7 +693,7 @@ public static class WWWItemExtension
         item.downloadFinish = finish;
         item.downloadError = error;
 
-        wwwUtil.AddTask(item);
+        webMgr.AddTask(item);
     }
 
 

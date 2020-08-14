@@ -13,21 +13,24 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-public class WWWUtil :MonoBehaviour
+[DisallowMultipleComponent]
+public class WebManager : MonoBehaviour
 {
-    public static WWWUtil Instance;
-
-    private void Awake()
-    {
-       Instance = this;
-       que = new Queue<WWWItemBase>();
-    }
+    //public static WWWUtil Instance;
 
     // 存储请求的数据队列
     private Queue<WWWItemBase> que;
 
     // 队列里的数据是否都请求完成了？
     private bool isFinish = true;
+
+
+    private void Awake()
+    {
+       //Instance = this;
+       que = new Queue<WWWItemBase>();
+    }
+
  
     /// <summary>
     /// 把需要请求的数据 加入到队列里

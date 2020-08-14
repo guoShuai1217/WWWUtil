@@ -18,20 +18,20 @@ public class Test : MonoBehaviour
     {
         for (int i = 0; i < 10; i++)
         {
-            WWWUtil.Instance.GetRequest("www.baidu.com", begin, progress, finish, error);
+            Game.Web.GetStringRequest("www.baidu.com", finish);
         }
 
         for (int i = 0; i < 10; i++)
         {
             byte[] tmp1 = new byte[10];
-            WWWUtil.Instance.PostRequest("www.baidu.com", tmp1, begin, progress, ff, error);
+            Game.Web.PostByteRequest("www.baidu.com", tmp1, begin, progress, ff, error);
         }
 
-        WWWUtil.Instance.GetRequest("www.baidu.com", begin, progress, ff, error);
+        Game.Web.GetStringRequest("www.baidu.com", begin, progress, finish, error);
 
 
         byte[] tmp = new byte[10];
-        WWWUtil.Instance.PostRequest("www.baidu.com", tmp, begin, progress, finish, error);
+        Game.Web.PostStringRequest("www.baidu.com", tmp, begin, progress, finish, error);
     }
 
     private void Update()
@@ -39,7 +39,7 @@ public class Test : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log(111);
-            WWWUtil.Instance.GetRequest("wwwunity3d.com", begin, progress, finish, error);
+            Game.Web.GetStringRequest("wwwunity3d.com", begin, progress, finish, error);
         }
     }
 

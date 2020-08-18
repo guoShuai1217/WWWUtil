@@ -1,4 +1,4 @@
-﻿/*
+/*
  *		Description: Post请求
  *
  *		CreatedBy: guoShuai
@@ -45,7 +45,10 @@ public class PostWWWItem : WWWItemBase
         if (beginDownload != null)
             beginDownload();
 
-        WWW www = new WWW(url,postData);
+        Dictionary<string, string> header = new Dictionary<string, string>();
+        header.Add("Content-Type", "application/json");
+
+        WWW www = new WWW(url,postData,header);
         while (!www.isDone)
         {
             if (downloadProgress != null)

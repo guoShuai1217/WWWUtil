@@ -44,10 +44,17 @@ public class FormWWWItem : WWWItemBase
             beginDownload();
 
         WWW www = new WWW(url, form);
+        float timeOut = Time.time;
         while (!www.isDone)
         {
             if (downloadProgress != null)
                 downloadProgress(www.progress);
+
+            if ((Time.time - timeOut) > TimeOut)
+            {
+                Debug.LogError("TimeOut");
+                yield break;
+            }
 
             yield return www.progress;
         }

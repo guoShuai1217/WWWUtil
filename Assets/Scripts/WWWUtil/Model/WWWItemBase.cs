@@ -34,6 +34,9 @@ public abstract class WWWItemBase
     //    this.url = url;
     //}
 
+    // 超时时间
+    protected float TimeOut = 5f;
+
     protected bool isFinish = false;
     /// <summary>
     /// 是否使用完成（true：可以再从池子里拿出来复用）

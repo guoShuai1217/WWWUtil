@@ -49,10 +49,17 @@ public class PostWWWItem : WWWItemBase
         header.Add("Content-Type", "application/json");
 
         WWW www = new WWW(url,postData,header);
+        float timeOut = Time.time;
         while (!www.isDone)
         {
             if (downloadProgress != null)
                 downloadProgress(www.progress);
+
+            if ((Time.time - timeOut) > TimeOut)
+            {
+                Debug.LogError("TimeOut");
+                yield break;
+            }
 
             yield return www.progress;
         }

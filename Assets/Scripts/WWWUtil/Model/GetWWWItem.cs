@@ -11,6 +11,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using UnityEngine;
 
 public class GetWWWItem : WWWItemBase
@@ -46,10 +47,17 @@ public class GetWWWItem : WWWItemBase
             beginDownload();
 
         WWW www = new WWW(url);
+        float timeOut = Time.time;
         while (!www.isDone)
         {
             if (downloadProgress != null)
                 downloadProgress(www.progress);
+
+            if ((Time.time - timeOut) > TimeOut)
+            {
+                Debug.LogError("TimeOut");
+                yield break;
+            }
 
             yield return www.progress;
         }
